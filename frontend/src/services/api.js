@@ -1,6 +1,6 @@
 import axios from 'axios';
-require('dotenv').config({ path: './backend/.env' });
-const API_URL = process.env.REACT_APP_API_URL||'http://localhost:5000';
+
+const API_URL = 'https://fantasy-cricket-ihir.onrender.com'||'http://localhost:5000';
 
 // Fetch all players with error handling
 export const fetchPlayers = async () => {

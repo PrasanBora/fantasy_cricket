@@ -4,7 +4,8 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const path = require('path'); // Add this
 
-require('dotenv').config({ path: './backend/.env' });
+require('dotenv').config();
+
 
 const mongoUri = process.env.MONGO_URI;
 // console.log(process.env);
