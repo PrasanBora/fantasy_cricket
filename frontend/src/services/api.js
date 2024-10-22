@@ -1,6 +1,6 @@
 import axios from 'axios';
-
-const API_URL = 'http://localhost:5000';
+require('dotenv').config({ path: './backend/.env' });
+const API_URL = process.env.REACT_APP_API_URL||'http://localhost:5000';
 
 // Fetch all players with error handling
 export const fetchPlayers = async () => {
